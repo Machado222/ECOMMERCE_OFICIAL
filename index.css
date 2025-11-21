@@ -488,4 +488,31 @@ img {
 body {
     font-family: 'Poppins', Arial, sans-serif;
 }
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #ffff00;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    background: rgba(255,255,0,0.08);
+    border: 2px solid rgba(255,255,0,0.3);
+}
+
+.nav-links a:hover {
+    background: #ffff00;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 0 12px rgba(255,255,0,0.6);
+}
+
 
