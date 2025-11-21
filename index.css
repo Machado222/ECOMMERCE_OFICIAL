@@ -68,12 +68,40 @@
 }
 
 /* MENU LATERAL */
+/* MENU LATERAL – ESTILO BASE */
 .menu-lateral {
     width: 20%;
-    background: #252525;
-    padding: 15px;
-    border-radius: 8px;
+    background: #252525;          /* fundo escuro */
+    padding: 20px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);   /* opcional: fica mais bonito */
+}
+
+/* Título "Categorias" */
+.menu-lateral h3 {
     color: yellow;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Links do menu */
+.menu-lateral a {
+    color: yellow;                 /* texto amarelo */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;                /* importante para o hover funcionar direito */
+    padding: 12px 10px;
+    border-radius: 6px;
+    transition: all 0.25s ease;    /* animação suave */
+}
+
+/* HOVER – só o texto cresce + fundo levemente mais claro */
+.menu-lateral a:hover {
+    transform: scale(1.12);        /* cresce 12% */
+    background-color: rgba(255,255,255,0.1);  /* fundo sutil ao passar o mouse */
+    color: #ffff00;                /* amarelo mais vivo (opcional) */
 }
 
 .menu-lateral ul {
