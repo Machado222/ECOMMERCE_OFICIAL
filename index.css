@@ -1,4 +1,13 @@
+.conteudo h1{
 
+    text-decoration: none;                    /* remove o padrão */
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 100% 2px;                /* 2px = espessura da linha */
+    padding-bottom: 4px;                      /* distância do texto até a linha */
+
+}
 /***************  BARRA DE NAVEGAÇÃO  ****************/
 
 .navbar {
