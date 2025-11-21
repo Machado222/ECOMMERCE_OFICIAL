@@ -364,6 +364,9 @@
 /* ÁREA DOS PRODUTOS */
 .produtos {
     width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;     /* espaço horizontal e vertical */
 }
 
 .card-produto {
@@ -464,7 +467,7 @@ img {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     background: #f0f0f0;
     color: black;
     width: 200px;   /* garante tamanho igual ao dos outros */
