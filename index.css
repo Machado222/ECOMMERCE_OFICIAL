@@ -310,3 +310,9 @@ img {
     height: 100%;
     object-fit: cover;
 }
+.descricao-produto {
+    font-size: 14px;
+    color: black;
+    margin-top: 5px;
+    text-align: center;
+}
