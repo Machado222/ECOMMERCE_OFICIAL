@@ -472,4 +472,10 @@ img {
     color: black;
     width: 200px;   /* garante tamanho igual ao dos outros */
     height: 150px;  /* garante tamanho igual ao dos outros */
+      
 }
+/* Fonte moderna global */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
