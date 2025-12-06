@@ -64,7 +64,6 @@
         <a href="#" class="btn-ver-tudo">Ver tudo</a>
     </section>
 
-
     <!-- ============ CONTAINER (MENU + PRODUTOS) ============ -->
     <div class="container">
 
@@ -79,24 +78,68 @@
             <a href="#">Notebooks</a>
         </aside>
 
-        <!-- PRODUTOS -->
+        <!-- ================= PRODUTOS (VERSÃO PREMIUM) =============== -->
         <section class="produtos">
 
             <div class="card-produto">
+                <span class="selo-promocao">-20%</span>
                 <img src="https://via.placeholder.com/300" alt="">
-                <p class="descricao-produto">Placa de vídeo RTX 3060</p>
+                <p class="descricao-produto">Placa de Vídeo RTX 3060</p>
+                <p class="preco-produto">R$ 1.899,90</p>
+                <a href="#" class="btn-comprar">Comprar</a>
             </div>
 
             <div class="card-produto">
                 <img src="https://via.placeholder.com/300" alt="">
-                <p class="descricao-produto">Processador Ryzen 5</p>
+                <p class="descricao-produto">Processador Ryzen 5 5600X</p>
+                <p class="preco-produto">R$ 799,90</p>
+                <a href="#" class="btn-comprar">Comprar</a>
             </div>
 
             <div class="card-produto">
                 <img src="https://via.placeholder.com/300" alt="">
                 <p class="descricao-produto">Memória RAM 8GB DDR4</p>
+                <p class="preco-produto">R$ 129,90</p>
+                <a href="#" class="btn-comprar">Comprar</a>
             </div>
 
             <div class="card-produto">
+                <span class="selo-promocao">-15%</span>
                 <img src="https://via.placeholder.com/300" alt="">
-                <p class="descricao-produ
+                <p class="descricao-produto">Headset Gamer RGB</p>
+                <p class="preco-produto">R$ 169,90</p>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- ============ BOTÕES FLUTUANTES ============ -->
+    <a href="#" class="btn-topo">Topo</a>
+    <a href="#" class="btn-carrinho">Carrinho</a>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <p>© 2025 CoreTech Store — Todos os direitos reservados.</p>
+        <p>
+            <a href="#">Termos</a> | 
+            <a href="#">Privacidade</a> | 
+            <a href="#">Contato</a>
+        </p>
+    </footer>
+
+    <!-- ============ SCRIPT DO BOTÃO VOLTAR AO TOPO ============ -->
+    <script>
+        const btnTopo = document.querySelector(".btn-topo");
+        btnTopo.addEventListener("click", function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+</body>
+</html>
