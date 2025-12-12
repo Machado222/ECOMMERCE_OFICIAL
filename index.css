@@ -670,7 +670,10 @@ footer {
     }
 
     .nav-links a {
-        font-size: 12px;
+        width: 80%;               /* botões maiores no mobile */
+        text-align: center;
+        font-size: 16px;          /* leve redução */
+        padding: 13px 0;
     }
 }
 /* GRID para promoções */
