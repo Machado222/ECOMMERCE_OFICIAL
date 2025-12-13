@@ -2,10 +2,26 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoreTech Store</title>
-    <link rel="stylesheet" href="index.css">
+    <title>CoreTech</title>
+    <link rel=stylesheet href=index.css>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+<body>
+
+
+
+<nav class=navbar>
+    <div class="logo">CoreTech</div>
+
+    <ul class=nav-links>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#login">Login</a></li>
+    </ul>
+</nav>
 
 <body>
 
@@ -54,16 +70,23 @@
             </div>
         </div>
 
-        <!-- PRODUTO 2 -->
+    <div class="produtos-mini">
         <div class="mini-card">
-            <span class="desconto">-35%</span>
-            <img src="https://via.placeholder.com/300" alt="Mouse Gamer">
+            <div class="desconto">-42%</div>
+            <img src="Predator.jpg" class="img_Oferta">
             <div class="info">
-                <p class="nome">Mouse Gamer 7200 DPI</p>
-                <p class="preco-antigo">R$ 119,90</p>
-                <p class="preco">R$ 79,90</p>
+                <p class="nome">Predator X1</p>
+                <p class="preco">R$ 4.999,90</p>
             </div>
         </div>
+
+        <div class="mini-card">
+            <div class="desconto">-35%</div>
+            <img src="Iphone.jpg" class="img_Oferta">
+            <div class="info">
+                <p class="nome">iPhone 15 Pro</p>
+                <p class="preco">R$ 6.199,90</p>
+        <div class="produtos-mini">
 
         <!-- PRODUTO 3 -->
         <div class="mini-card">
@@ -139,6 +162,9 @@
 
     <!-- ============ CONTAINER (MENU + PRODUTOS) ============ -->
     <div class="container">
+    
+    </div class="produtos">
+    <h2>PRODUTOS</h2>
 
         <!-- MENU LATERAL -->
         <aside class="menu-lateral">
@@ -186,33 +212,50 @@
 
         </section>
 
+
     </div>
 
     <!-- ============ BOTÕES FLUTUANTES ============ -->
     <a href="#" class="btn-topo">Topo</a>
     <a href="#" class="btn-carrinho">Carrinho</a>
 
-    <!-- ============ FOOTER ============ -->
-    <footer>
-        <p>© 2025 CoreTech Store — Todos os direitos reservados.</p>
-        <p>
-            <a href="#">Termos</a> | 
-            <a href="#">Privacidade</a> | 
-            <a href="#">Contato</a>
+    <footer style="background: #111; color: #fff; padding: 30px 20px; text-align: center;">
+    <div style="max-width: 1000px; margin: 0 auto;">
+
+        <p style="margin: 0; font-size: 1rem;">
+            &copy; 2025 Minha Empresa. Todos os direitos reservados.
         </p>
-    </footer>
 
-    <!-- ============ SCRIPT DO BOTÃO VOLTAR AO TOPO ============ -->
-    <script>
-        const btnTopo = document.querySelector(".btn-topo");
-        btnTopo.addEventListener("click", function(event) {
-            event.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-    </script>
+        <nav style="margin-top: 10px;">
+            <a href="#privacidade" style="color: #aaa; text-decoration: none; margin: 0 10px;">
+                Política de Privacidade
+            </a>
+            |
+            <a href="#contato" style="color: #aaa; text-decoration: none; margin: 0 10px;">
+                Contato
+            </a>
+            |
+            <a href="contato.html" style="color: #aaa; text-decoration: none; margin: 0 10px;">
+                Página de Contato
+            </a>
+        </nav>
 
+    </div>
+</footer>
+
+
+
+<a href="#inicio" class="btn-topo">Voltar ao topo</a>
+
+<!-- Botão Ver Carrinho (novo, idêntico e acima do outro) -->
+<a href="#carrinho" class="btn-carrinho">
+    <svg class="icone-carrinho" viewBox="0 0 24 24" width="28" height="28" fill="black">
+        <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.76 1.38-.19 3.06.92 3.06h12V15H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+    </svg>
+    VER CARRINHO
+    
+</a>
+
+</div>
 </body>
 </html>
